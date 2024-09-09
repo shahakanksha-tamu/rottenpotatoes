@@ -1,16 +1,42 @@
-<p style="color: green"><%= notice %></p>
-
 <% content_for :title, "Movies" %>
 
-<h1>Movies</h1>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<div id="movies">
-  <% @movies.each do |movie| %>
-    <%= render movie %>
-    <p>
-      <%= link_to "Show this movie", movie %>
-    </p>
-  <% end %>
+  <div id="list-heading">
+    <h1>Movies</h1>
+  </div>
+
+  <table id="movies">
+    
+    <thead id="movie-th">
+      <th class="tb-th">Title</th>
+      <th class="tb-th">Rating</th>
+      <th class="tb-th">Release Date</th>
+      <th class="tb-th"></th>
+    </thead>
+    
+    <tbody id="movie-tbody">
+    <% @movies.each do |movie| %>
+      <%= render movie %>
+    <% end %>
+    </tbody>
+
+    <tfoot id="movie-tfoot">
+
+      <tr>
+      
+        <td colspan="2">
+          <p><%= link_to "<button id='btn-create'>Create New Movie</button>".html_safe, new_movie_path %></p>
+        </td>
+      
+      </tr>
+    
+    </tfoot>
+
+  </table>
+
 </div>
 
-<%= link_to "New movie", new_movie_path %>
+
+

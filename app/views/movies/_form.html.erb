@@ -1,4 +1,5 @@
 <%= form_with(model: movie) do |form| %>
+  
   <% if movie.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
@@ -13,25 +14,42 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, disabled: @readonly%>
   </div>
 
   <div>
     <%= form.label :rating, style: "display: block" %>
-    <%= form.text_field :rating %>
+    <%= form.text_field :rating, disabled: @readonly %>
   </div>
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, disabled: @readonly %>
   </div>
 
   <div>
     <%= form.label :release_date, style: "display: block" %>
-    <%= form.text_field :release_date %>
+    <%= form.text_field :release_date, disabled: @readonly %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+
+  <% unless @readonly %>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+
+  <%if @readonly%>
+
+    <div>
+
+        <%= link_to "<button class='btn-create'>Edit Movie</button>".html_safe, edit_movie_path(@movie) %>
+        <%= link_to "<button class='btn-list' id='show-list-btn'>Back to movies</button>".html_safe, movies_path %>
+
+
+    </div>
+    
+  <% end %>
+
+
 <% end %>

@@ -28,9 +28,21 @@ more_movies = [
   { title: 'CODA',
     rating: 'PG-13',
     release_date: '13-Aug-2021'
+  },
+  { title: 'Avengers',
+    rating: 'A',
+    release_date: '13-Dec-2021'
+  },
+  { title: 'Iron Man',
+    rating: 'PG-12',
+    release_date: '13-Jan-2021'
+  },
+  { title: 'Captain America',
+    rating: 'PG-13',
+    release_date: '14-Aug-2021'
   }
 ]
 
 more_movies.each do |movie|
-  Movie.create!(movie)
+  Movie.find_or_create_by!(movie)
 end

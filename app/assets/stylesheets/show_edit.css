@@ -1,0 +1,88 @@
+.heading{
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-list{
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-content: center;
+    margin-top:10px;   
+
+
+}
+
+
+.btn-create{
+
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-content: center;
+    margin-top:10px;   
+
+
+}
+
+.btn-create:hover{
+    background-color: #218838;
+}
+
+.btn-show{
+
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-content: center;
+    margin-top:10px;   
+
+
+}
+
+.btn-show:hover{
+    background-color: #138496
+}
+
+.btn-list:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-content: center;
+    margin-top:10px;   
+    margin-left:10px;
+}
+
+.btn-delete:hover{
+    background-color: #c82333;
+}
+
+.delete-form{
+    all:unset;
+}

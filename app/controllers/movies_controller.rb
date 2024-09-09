@@ -8,6 +8,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/1 or /movies/1.json
   def show
+    @readonly = true
   end
 
   # GET /movies/new
@@ -17,6 +18,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/1/edit
   def edit
+    @readonly = false
   end
 
   # POST /movies or /movies.json

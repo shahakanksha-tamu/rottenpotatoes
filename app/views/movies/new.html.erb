@@ -1,11 +1,22 @@
 <% content_for :title, "New movie" %>
 
-<h1>New movie</h1>
+<div class="container">
+  <div class="heading">
+    <div>
+      <h1>New Movie</h1>
+    </div>
 
-<%= render "form", movie: @movie %>
+    <div>
+      <%= link_to "<button class='btn-list'>Back to movies</button>".html_safe, movies_path%>
+    </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to movies", movies_path %>
+  </div>
+  <div>
+    <%= render "form", movie: @movie %>
+  </div>
 </div>
+
+
+
+
+
