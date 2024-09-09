@@ -39,17 +39,4 @@
     </div>
   <% end %>
 
-  <%if @readonly%>
-
-    <div>
-
-        <%= link_to "<button class='btn-create'>Edit Movie</button>".html_safe, edit_movie_path(@movie) %>
-        <%= link_to "<button class='btn-list' id='show-list-btn'>Back to movies</button>".html_safe, movies_path %>
-
-
-    </div>
-    
-  <% end %>
-
-
 <% end %>

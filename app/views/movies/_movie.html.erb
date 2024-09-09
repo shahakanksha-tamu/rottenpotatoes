@@ -13,7 +13,9 @@
   </td>
 
   <td>
-    <%= link_to "<button id='btn'>Show</button>".html_safe, movie %>
+    <%= link_to "<button id='btn-show' class='btn'>Show</button>".html_safe, movie %>
+    <%= link_to "<button class='btn' id='btn-edit'>Edit</button>".html_safe, edit_movie_path(movie) %>
+    <%= button_to "Delete", movie, method: :delete, class: "btn", id: "btn-delete", form_class: "delete-form" %>
   </td>
   
 </tr>

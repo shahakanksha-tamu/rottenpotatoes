@@ -7,8 +7,7 @@
         <h1>Show Movie</h1>
     </div>
     <div>
-       
-        <%= button_to "Delete Movie", @movie, method: :delete, class: "btn-delete", form_class: "delete-form" %>
+      <%= link_to "<button class='btn-list'>Back to movies</button>".html_safe, movies_path%>
     </div>
   </div>
 
