@@ -12,6 +12,6 @@ module MoviesHelper
   end
 
   def column_class(column)
-    session[:sort_column] == column ? "active-column" : "inactive-column"
+    session[:sort_column] == column ?  (session[:sort_direction] == "asc" ? "active-column-asc" : "active-column-desc") : "inactive-column"
   end
 end

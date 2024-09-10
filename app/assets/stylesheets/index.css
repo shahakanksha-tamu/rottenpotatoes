@@ -117,8 +117,13 @@ tr:nth-child(odd){
     margin-left: 10px;
 }
 
-.active-column{
-    background-color: rgba(117, 221, 239, 0.035);
+.active-column-asc{
+    background-color: rgb(76, 161, 180, 0.3);
+}
+
+.active-column-desc{
+
+    background-color: rgba(245, 77, 77, 0.3);
 }
 
 .inactive-column{
