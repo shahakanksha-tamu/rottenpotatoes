@@ -29,17 +29,34 @@ more_movies = [
     rating: 'PG-13',
     release_date: '13-Aug-2021'
   },
-  { title: 'Avengers',
-    rating: 'A',
-    release_date: '13-Dec-2021'
-  },
   { title: 'Iron Man',
     rating: 'PG-12',
     release_date: '13-Jan-2021'
   },
-  { title: 'Captain America',
+  { title: 'Inception',
     rating: 'PG-13',
-    release_date: '14-Aug-2021'
+    release_date: '16-Jul-2010',
+    description: 'A mind-bending thriller about dream infiltration.'
+  },
+  { title: 'The Grand Budapest Hotel',
+    rating: 'R',
+    release_date: '28-Feb-2014',
+    description: 'A quirky tale of a hotel concierge and his adventures.'
+  },
+  { title: 'Spirited Away',
+    rating: 'PG',
+    release_date: '20-Jul-2001',
+    description: 'A young girl embarks on a magical journey in a mysterious world.'
+  },
+  { title: 'Interstellar',
+    rating: 'PG-13',
+    release_date: '07-Nov-2014',
+    description: 'A space exploration mission to find a new home for humanity.'
+  },
+  { title: 'Joker',
+    rating: 'R',
+    release_date: '04-Oct-2019',
+    description: 'An origin story of the iconic villain from Batman.'
   }
 ]
 
