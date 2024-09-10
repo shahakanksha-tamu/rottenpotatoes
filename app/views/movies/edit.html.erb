@@ -9,7 +9,7 @@
     </div>
 
     <div>
-        <%= link_to "<button class='btn-list'>Back to movies</button>".html_safe, movies_path%>
+        <%= link_to "<button class='btn-list'>Back to movies</button>".html_safe, movies_path(sort: session[:sort_column], direction: session[:sort_direction])%>
     </div>
 
   </div>
