@@ -8,7 +8,7 @@ module MoviesHelper
     link_to raw("#{column.titleize} #{icon_html}"),
             movies_path(sort: column, direction: sort_direction),
             class: (session[:sort_column] == column ? "active-sort" : "inactive-sort"),
-            data: { method: :POST }
+            data: { turbo: false }
   end
 
   def column_class(column)
